@@ -1,1 +1,5 @@
 git
+上传方法
+git add 文件
+git commit -m"注释"
+git push origin master
