@@ -2,4 +2,5 @@ git
 上传方法
 git add 文件
 git commit -m"注释"
-git push origin master
+git push origin master 有反应时间
+上传好像也有延迟，，，
