@@ -1,0 +1,54 @@
+层叠样式表(Cascading Style Sheets)
+改变样式 布局
+控制浏览器如何显示html
+
+语法
+选择器（某元素如h1）{
+    属性(property):值(value); 
+    ...
+}
+...
+
+HTML 文档链接 CSS 文档
+<link rel="stylesheet" href="styles.css">
+
+局部控制 使用类名 class
+<li class="special">项目二</li>
+应用于类名
+.special {
+  color: orange;
+  font-weight: bold;
+}
+应用于某元素的类名
+li.special,
+span.special {
+  ...
+}
+定位元素 1.类名 2.从属 例如 li em
+状态定样式
+修改链接的样式 未访问的、访问过的、被鼠标悬停的、被键盘定位的，亦或是正在被点击当中的状态
+a:link {
+  color: pink;
+}
+?同时用选择器 选择符
+构建css 外部(最优)内部 内联
+级联规则和专用规则
+稍后的样式将覆盖以前的样式(层叠)
+一个类被描述为比元素选择器更具体，或者具有更多的特异性，所以它获胜了（优先级，选择器更具体）
+常见的做法是给基本元素定义通用样式，然后给不同的元素创建对应的类
+？target
+继承  些设置在父元素上的css属性是可以被子元素继承
+控制继承 inherit开启继承 initial同浏览器默认 unset不设置
+id属性 <p id="qwer">...</p> ccs中用法
+#qwer{
+  ...
+}
+!important 最高优先级
+选择器类型 类 id h1 { } .box { } #unique { }
+伪类a:hover { }  伪元素p::first-line { }
+全局选择器
+* {
+    margin（外边距）: 0;
+}
+article :first-child/article *:first-child （article的第一子元素） 
+article:first-child 选择了作为其他元素的第一子元素的<article>元素
