@@ -1,0 +1,126 @@
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1230px;
+    height: 332px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto 0 auto;
+}
+.pic{
+    width: 8610px;
+    height: 332px;
+    position: absolute;
+    z-index: 1;
+    left: -1230px;
+}
+.pic img{
+    float: left;
+    width: 1230px;
+    height: 332px;
+}
+.container .btn{
+    position: absolute;
+    width: 300px;
+    height: 20px;
+    z-index: 2;
+    left: 50%;
+    top: 100%;
+    transform: translate(-150px,-30px);
+}
+.container .btn span{
+    margin: 10px;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+}
+.container .btn span.on{
+    background-color: white;
+}
+.container .arrow{
+    position: absolute;
+    z-index: 2;
+    color: white;
+    background-color: transparent;
+    border-radius: 50%;
+    display: none;
+    font-size: 30px;
+    top: 50%;
+}
+.container .arrow-left{
+    left: 10px;
+}
+.container .arrow-right{
+    right: 10px;
+}
+.container:hover .arrow{
+    display: block;
+}
+.container .arrow:hover{
+    background-color: black;
+}
+li{
+    list-style-type: none;
+    display: flex;
+    padding-right: 100px;
+    float: left;
+    height: 44px;
+    align-items: flex-end;
+}
+li a.logo{
+    color: blue;
+    font-size: 30px;
+}
+li a{
+    text-decoration: none;
+    color: #5b6260;
+}
+li a:visited{
+    font-weight: bolder;
+    border-bottom: 5px,solid black;
+}
+li a:hover{
+    color: black;
+}
+nav{
+    display: block;
+    height: 80px;
+}
+form{
+    display: inline;
+}
+nav img{
+    padding-left:100px;
+}
+a:focus + .dropdown-content{
+    display:block;
+}
+.dropdown-content{
+    display: none;
+}
+ul.xiala{
+    border:1px solid #333;
+    display: inline-block;
+    margin-top:1px;
+    padding:0px;
+}
+ul>li.xiala{
+    height: auto;
+    padding: 3px 10px;
+    border-bottom: 1px solid #333;
+    text-align: center;
+    vertical-align: middle;
+}
+ul>li.xiala:hover{
+    background-color:#DDD;
+}  
+div.dropdown img,ul.xiala{
+    transform: translate(1300px,-40px);
+}
+nav.navtwo ul{
+    text-align: center;
+}
