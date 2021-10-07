@@ -1,6 +1,12 @@
 var wrap = document.querySelector(".pic");
 var next = document.querySelector(".arrow-right");
 var prev = document.querySelector(".arrow-left");
+function dotchange () {
+    for(var i = 0; i < 5; i++){
+        dots[i].className = "";
+    }
+    dots[index].className = "on";
+}
 next.onclick = function () {
     next_pic();
 }
@@ -51,9 +57,3 @@ container.onmouseleave = function () {
 }
 var index = 0;
 var dots = document.getElementsByTagName("span");
-function dotchange () {
-    for(var i = 0; i < 5; i++){
-        dots[i].className = "";
-    }
-    dots[index].className = "on";
-}

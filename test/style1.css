@@ -1,10 +1,12 @@
+a{
+    cursor: pointer;
+}
 li{
     list-style-type: none;
-    display: flex;
+    display: inline;
     padding-right: 100px;
     float: left;
     height: 44px;
-    align-items: flex-end;
 }
 li a.logo{
     color: blue;
@@ -14,58 +16,46 @@ li a{
     text-decoration: none;
     color: #5b6260;
 }
-li a:visited{
-    font-weight: bolder;
-    border-bottom: 5px,solid black;
-}
 li a:hover{
     color: black;
 }
 nav{
-    display: block;
     height: 80px;
-    position: sticky;
+    margin-bottom :20px ;
+}
+.topnav{
+    transform: translate(0,20px);
 }
 form{
-    display: inline;
+    display: inline-block;
 }
 nav img{
     padding-left:100px;
 }
-a:focus + .dropdown-content{
-    display:block;
-}
 .dropdown-content{
     display: none;
 }
-ul.xiala{
-    border:1px solid #333;
-    display: inline-block;
-    margin-top:1px;
-    padding:0px;
+.dropdown:hover  .dropdown-content{
+    display:block;
 }
-ul>li.xiala{
+.xiala{
+    border:1px solid #333;
+    display: block;
     height: auto;
     padding: 3px 10px;
-    border-bottom: 1px solid #333;
     text-align: center;
-    vertical-align: middle;
 }
-ul>li.xiala:hover{
+.xiala a:hover{
     background-color:#DDD;
 }  
 div.dropdown img,ul.xiala{
     transform: translate(1300px,-40px);
 }
-nav.navtwo ul{
+.navtwo ul{
     text-align: center;
 }
-.flexbox-container{
-    display: flex;
-    justify-content: center;
-}
 .content{
-    background-color: #f1f1f1;
+    background-color: red;
     width:initial;
     height: auto;
 }

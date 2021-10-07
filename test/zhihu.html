@@ -5,24 +5,23 @@
         <title>首页-知乎</title>
         <link rel="stylesheet" href="style1.css">
         <link rel="shortcut icon" href="pictures/zhihu.icon">
-        <script type="text/javascript" src="zhihu.js"></script>
     </head>
     <body>
         <nav style="position:sticky;">
-            <ul class="links-list">
-                <li><a class="logo" href="#">知乎</a></li>
-                <li><a class="topnav" href="#">首页</a></li>
-                <li><a class="topnav" href="lunbo.html">会员</a></li>
-                <li><a class="topnav" href="#">发现</a></li>
-                <li><a class="topnav" href="#">等你来答</a></li>
+            <ul>
+                <li><a class="logo" href="zhihu.html">知乎</a></li>
+                <li class="topnav"><a href="zhihu.html">首页</a></li>
+                <li class="topnav"><a href="lunbo.html">会员</a></li>
+                <li class="topnav" ><ahref="#">发现</ahref=></li>
+                <li class="topnav"><a href="#">等你来答</a></li>
             </ul>
-            <form style="position: sticky;position: -webkit-sticky;">
-                <input type="search" name="q" placeholder="搜索你感兴趣的内容">
-                <button type="button">提问</button>
+            <form>
+                <input type="search"  placeholder="搜索你感兴趣的内容 ">
+                <input type="image" src="pictures/search.png" width="20px" style="transform: translate(0,6px);">
             </form>
             <a href="#"><img src="pictures/tongzhi.png"></a>
             <a href="#"><img src="pictures/sixin.png"></a>
-            <div class="dropdown"><a href="login.html"><img src="pictures/touxiang.jpg" height="36px" width="36px"></a>
+            <div class="dropdown"><a href="login.html"><img src="pictures/touxiang.jpg" height="36px" width="36px" ></a>
                 <div class="dropdown-content">
                     <ul class="xiala">
                         <li class="xiala"><a href="#">>我的主页</a></li>
@@ -32,18 +31,18 @@
             </div></div>
         </nav>
         <main>
-            <div class="content">
+            <div class="content" style="background-color: #f1f1f1;">
                 <div class="mainsth">
                     <div class="navtwo">
-                        <ul style="position: sticky;">
-                            <li><a href="#" class="topnav>" style = "color:blue">关注</a></li>
-                            <li><a href="zhihu2.html" class="topnav>">推荐</a></li>
-                            <li><a href="zhihu3.html" class="topnav>">热榜</a></li>
-                            <li><a href="zhihu4.html" class="topnav>">视频</a></li>
+                        <ul >
+                            <li><a href="#" style = "color:blue">关注</a></li>
+                            <li><a href="zhihu2.html" >推荐</a></li>
+                            <li><a href="zhihu3.html" >热榜</a></li>
+                            <li><a href="zhihu4.html" >视频</a></li>
                         </ul>
                     </div>
                     <div class="wenzhang">
-                        <div class="wenzhang1"><br><br><h2>有什么能让人笑破肚皮的笑话?</h2>1、爷爷前一阵子把腿摔伤了，出院后，常常在院子里颤颤巍巍的练习走路。 今天，爷爷又在院里练习走路，小明用手机播放起了音乐，给他伴奏。 结果爷爷暴怒：“兔崽子，你放植物大战僵尸的音乐是什么意思？<br>
+                        <div class="wenzhang1"><br><br><h2>有什么能让人笑破肚皮的笑话?</h2>爷爷前一阵子把腿摔伤了，出院后，常常在院子里颤颤巍巍的练习走路。 今天，爷爷又在院里练习走路，小明用手机播放起了音乐，给他伴奏。 结果爷爷暴怒：“兔崽子，你放植物大战僵尸的音乐是什么意思？<br>
                         <button id="dianzan" onclick="zantong()">赞同</button>
                         <button id="shoucang" onclick="shoucang()">收藏</button>
                         </div>
@@ -59,12 +58,11 @@
                         <button>写文章</button>
                         <button>写想法</button>
                         <div class="guli">
+                            <img src="pictures/create.png" alt="刘看山" width=60px style="float: right; ">
                             <p>开启你的知乎创作之旅发布首篇内容，开通创作中心 快来成为知乎创作者吧～</p>
-                            <img src="pictures/create.png" alt="刘看山" width=60px style="float: inline-end; transform: translate(50px,-40px);">
                             <button>开始创作</button>
                         </div>
-                        <img src="pictures/adv1.png" alt="adv" width="280px">
-                        
+                        <img src="pictures/adv1.png" alt="adv" width="280px">                       
                     </div>
                     <div class="live">
                         <button>live</button>
@@ -106,4 +104,5 @@
             </div>
         </main>    
     </body>
+    <script type="text/javascript" src="zhihu.js" async></script>
 </html>
